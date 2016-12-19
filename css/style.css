@@ -1,0 +1,174 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background: #FEFEFF;
+    color: #333;
+}
+
+.container ul {
+    float: right;
+    line-height: 90px;
+    color: #98554c;
+}
+
+.container .menu li {
+    padding: 18px;
+    display: inline-block;
+    list-style-type: none;
+    font-weight: 900;
+}
+
+.container li a {
+    color: #98554c;
+    font-size: 18px;
+}
+
+.container li a:hover  {
+    color: #cd6d9b;
+    text-decoration: none;
+}
+
+.new-row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row:before, .row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 1px;
+  width: 100%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.photos {
+    padding: 15px;
+}
+
+.cake img {
+    border: 6px solid #ca719f;
+    border-radius: 63px;
+}
+
+.first-button .order-button {
+    color: #98554c;
+    border: 5px solid #f3d3a5;
+}
+
+.first-button .order-button:hover {
+    background-color: #b0736e;
+    /*background-color: #cd6d9b;*/
+    border: 5px solid #b0736e;
+    color: white;
+}
+
+.new-footer {
+    border: 1px solid #f699c5;
+}
+
+.new-footer .social-box {
+    background-color: #a6736b;
+    margin: 0;
+    text-align: center;
+}
+
+.social-box a {
+    display: inline-block;
+}
+
+.social-box .fb-Ada,.mail-Ada,.cake-Ada {
+    color: white;
+}
+
+.social-box .fb-Ada:hover,
+.social-box .mail-Ada:hover,
+.social-box .cake-Ada:hover {
+    color: #c092a3;
+}
+
+.social-box .fb-Ada,.mail-Ada,.cake-Ada {
+    padding: 10px;
+
+}
+
+.small-footer p {
+    margin: 0;
+    padding: 5px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* moje wypieki */
+
+.cake-photos img {
+    border: 6px solid #ca719f;
+    border-radius: 63px;
+    margin: 0px 3px 10px;
+}
+
+/* kontakt */
+
+.coffe-ada img {
+    border-radius: 63px;
+    border: 6px solid #ca719f;
+}
+
+.contact a {
+    color: #333;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    .col-m-12 {
+      width: 100%;
+    }
+
+    [class*="col-"] {
+      float: none;
+    } 
+}
+
+@media (max-width: 767px){
+    .container ul {
+    float: none;
+    text-align: center;
+    }
+
+    .col-s-12 {
+      width: 100%;
+    }
+
+    [class*="col-"] {
+      float: none;
+    } 
+    .container .menu li {
+    display: block;
+    }
+
+    .container .menu li {
+    padding: 0px;
+}
